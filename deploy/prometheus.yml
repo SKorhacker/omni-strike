@@ -1,0 +1,25 @@
+# Prometheus STUB for compose profile "monitoring".
+global:
+  scrape_interval: 30s
+  evaluation_interval: 30s
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  - job_name: postgres
+    static_configs:
+      - targets: ["postgres-exporter:9187"]
+
+  # oa-server: /v1/metrics returns JSON (counters + latency snapshots), NOT the Prometheus text
+  # format, and requires a bearer token. Options: (a) add a prometheus-community/json-exporter
+  # sidecar mapping the JSON fields, or (b) add a native /metrics endpoint to oa-server later.
+  # Liveness can be probed today with blackbox_exporter against http://oa-server:8080/health/ready.
+  # - job_name: oa-server
+  #   metrics_path: /v1/metrics
+  #   authorization:
+  #     type: Bearer
+  #     credentials_file: /etc/prometheus/oa_api_token   # mount as a secret, never inline
+  #   static_configs:
+  #     - targets: ["oa-server:8080"]

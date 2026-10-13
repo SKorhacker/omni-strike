@@ -1,0 +1,22 @@
+[
+ {
+  "symbol": "BTC-261225-85000-C",
+  "priceChange": "255",
+  "priceChangePercent": "0.041",
+  "lastPrice": "6480",
+  "lastQty": "0.02",
+  "open": "6225",
+  "high": "6480",
+  "low": "6225",
+  "volume": "0.02",
+  "amount": "129.6",
+  "bidPrice": "7060",
+  "askPrice": "7115",
+  "openTime": 1791017220000,
+  "closeTime": 1791128468463,
+  "firstTradeId": 214,
+  "tradeCount": 1,
+  "strikePrice": "85000",
+  "exercisePrice": "86320.63630435"
+ }
+]

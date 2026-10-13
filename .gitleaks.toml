@@ -1,0 +1,10 @@
+# Secret scan: default gitleaks rules, minus known false positives.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Public on-chain addresses and instrument ids in recorded market data; documented dummy values in tests"
+regexTarget = "match"
+regexes = [
+  '''0x[0-9a-fA-F]{40}"''',
+]

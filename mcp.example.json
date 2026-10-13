@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "omni-strike": {
+      "command": "/absolute/path/to/omni-strike/target/release/oa-mcp",
+      "env": { "OA_API_URL": "http://127.0.0.1:8080" }
+    }
+  }
+}

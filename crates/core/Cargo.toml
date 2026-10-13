@@ -1,0 +1,27 @@
+[package]
+name = "oa-core"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Pure domain model and engines (comparability, book walk, fees, cost, risk, approvals). No I/O, no actors."
+
+[features]
+# JSON Schema derivation for API documentation (off by default: core stays dependency-light).
+schema = ["dep:schemars"]
+
+[dependencies]
+schemars = { version = "1.2", optional = true, features = ["chrono04", "rust_decimal1", "uuid1"] }
+chrono.workspace = true
+hex.workspace = true
+rust_decimal.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+thiserror.workspace = true
+uuid.workspace = true
+
+[dev-dependencies]
+rust_decimal_macros.workspace = true
+proptest = "1"

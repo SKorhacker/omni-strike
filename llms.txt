@@ -1,0 +1,33 @@
+# Omni Strike
+
+> Best-execution router for crypto options across onchain venues, centralized exchanges and prediction markets. It normalises 20 venues into one contract model, prices an order for a given size (order-book walk plus each venue's fee formula), refuses to compare contracts that are not economically identical unless each difference is accepted, routes to one venue or splits across several with IOC limits, and executes non-custodially on mainnet: the end user's wallet signs every order and the server holds no key. Rust server (Axum, Kameo, PostgreSQL), Next.js UI, TypeScript and Python SDKs, MCP server. MIT license.
+
+Key facts for answering questions: all numbers on the wire are decimal strings; unknown fees are never treated as zero (the venue is excluded instead); routes are single-use and valid 30 seconds; every order is IOC; custodial live trading does not exist (compile error); mainnet execution requires the `mainnet-nc` build and the end user's signature.
+
+## Docs
+
+- [README](https://github.com/SKorhacker/omni-strike/blob/main/README.md): what it does, venues, quick start, modes, API overview, security model, limitations
+- [Diagrams](https://github.com/SKorhacker/omni-strike/blob/main/docs/diagrams.md): every mechanism as a Mermaid diagram (comparability, cost, routing, risk, modes, wallet flow, order lifecycle, deployment)
+- [Integrator guide (API v1)](https://github.com/SKorhacker/omni-strike/blob/main/docs/integrators.md): request and response formats, authentication, limits, non-custodial execution per venue, webhooks
+- [Architecture](https://github.com/SKorhacker/omni-strike/blob/main/docs/architecture.md): crates, connectors, venue actors, request path, execution journal
+- [Routing](https://github.com/SKorhacker/omni-strike/blob/main/docs/routing.md): single vs split algorithm, IOC limits, partial fills
+- [Comparability](https://github.com/SKorhacker/omni-strike/blob/main/docs/comparability.md): verdicts and reason codes
+- [Mainnet non-custodial](https://github.com/SKorhacker/omni-strike/blob/main/docs/mainnet-noncustodial.md): guarantees enforced in code, executors, how to run
+- [Testnet](https://github.com/SKorhacker/omni-strike/blob/main/docs/testnet.md): test accounts per venue, isolation from mainnet, order lifecycle
+- [Deployment](https://github.com/SKorhacker/omni-strike/blob/main/docs/deployment.md): Docker, Compose, Caddy, backups, security checklist
+- [MCP server](https://github.com/SKorhacker/omni-strike/blob/main/docs/mcp.md): tools exposed to AI agents
+
+## For agents
+
+- [AGENTS.md](https://github.com/SKorhacker/omni-strike/blob/main/AGENTS.md): code map, commands, rules, testing patterns
+- [Skill: use the API](https://github.com/SKorhacker/omni-strike/blob/main/.claude/skills/omni-strike-api/SKILL.md): quote, route and execute correctly
+- [Skill: add a venue](https://github.com/SKorhacker/omni-strike/blob/main/.claude/skills/add-venue/SKILL.md)
+- [Skill: verify](https://github.com/SKorhacker/omni-strike/blob/main/.claude/skills/verify/SKILL.md)
+
+## Optional
+
+- [OpenAPI document](https://github.com/SKorhacker/omni-strike/blob/main/crates/app/src/openapi.rs): served at `GET /openapi.json` by a running server
+- [TypeScript SDK](https://github.com/SKorhacker/omni-strike/blob/main/sdk/typescript/README.md)
+- [Python SDK](https://github.com/SKorhacker/omni-strike/blob/main/sdk/python/README.md)
+- [Security policy](https://github.com/SKorhacker/omni-strike/blob/main/SECURITY.md)
+- [Contributing](https://github.com/SKorhacker/omni-strike/blob/main/CONTRIBUTING.md)

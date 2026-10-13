@@ -1,0 +1,35 @@
+{
+ "retCode": 0,
+ "retMsg": "success",
+ "result": {
+  "category": "option",
+  "nextPageCursor": "",
+  "list": [
+   {
+    "symbolId": 312548,
+    "symbol": "BTC-25DEC26-85000-C-USDT",
+    "status": "Trading",
+    "baseCoin": "BTC",
+    "quoteCoin": "USDT",
+    "settleCoin": "USDT",
+    "optionsType": "Call",
+    "launchTime": "1767926400000",
+    "deliveryTime": "1798185600000",
+    "deliveryFeeRate": "0.00015",
+    "priceFilter": {
+     "minPrice": "5",
+     "maxPrice": "1110000",
+     "tickSize": "5"
+    },
+    "lotSizeFilter": {
+     "maxOrderQty": "500",
+     "minOrderQty": "0.01",
+     "qtyStep": "0.01"
+    },
+    "displayName": "BTCUSDT-25DEC26-85000-C"
+   }
+  ]
+ },
+ "retExtInfo": {},
+ "time": 1791287285889
+}

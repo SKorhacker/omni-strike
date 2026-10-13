@@ -1,0 +1,38 @@
+{
+ "retCode": 0,
+ "retMsg": "SUCCESS",
+ "result": {
+  "category": "option",
+  "list": [
+   {
+    "symbol": "BTC-23OCT26-98000-C-USDT",
+    "bid1Price": "160",
+    "bid1Size": "15.86",
+    "bid1Iv": "0.3674",
+    "ask1Price": "165",
+    "ask1Size": "67.4",
+    "ask1Iv": "0.3697",
+    "lastPrice": "145",
+    "highPrice24h": "215",
+    "lowPrice24h": "145",
+    "markPrice": "156.03699422",
+    "indexPrice": "86008.50310121",
+    "markIv": "0.366",
+    "underlyingPrice": "86193.9",
+    "openInterest": "1.42",
+    "turnover24h": "27442.724",
+    "volume24h": "0.32",
+    "totalVolume": "5",
+    "totalTurnover": "379958",
+    "delta": "0.0556718",
+    "gamma": "0.00001655",
+    "vega": "20.83746438",
+    "theta": "-22.53675034",
+    "predictedDeliveryPrice": "0",
+    "change24h": "-0.3255814"
+   }
+  ]
+ },
+ "retExtInfo": {},
+ "time": 1791280840329
+}

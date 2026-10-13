@@ -1,0 +1,46 @@
+{
+ "symbol": "BTC-USDC-20261008-86000-C",
+ "bids": [
+  {
+   "price": "670.0000",
+   "priceLevelQuantity": "5.95000000",
+   "type": "bid"
+  },
+  {
+   "price": "660.0000",
+   "priceLevelQuantity": "0.48400000",
+   "type": "bid"
+  },
+  {
+   "price": "650.0000",
+   "priceLevelQuantity": "11.99890000",
+   "type": "bid"
+  },
+  {
+   "price": "630.0000",
+   "priceLevelQuantity": "0.00236017",
+   "type": "bid"
+  }
+ ],
+ "asks": [
+  {
+   "price": "720.0000",
+   "priceLevelQuantity": "0.48400000",
+   "type": "ask"
+  },
+  {
+   "price": "730.0000",
+   "priceLevelQuantity": "12.99520000",
+   "type": "ask"
+  },
+  {
+   "price": "750.0000",
+   "priceLevelQuantity": "4.95235900",
+   "type": "ask"
+  }
+ ],
+ "datetime": "2026-10-06T10:03:30.016Z",
+ "timestamp": "1791281010016",
+ "publishedAtTimestamp": "1791281012086",
+ "sequenceNumber": 67204
+}

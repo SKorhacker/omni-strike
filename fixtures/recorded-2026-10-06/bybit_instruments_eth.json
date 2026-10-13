@@ -1,0 +1,58 @@
+{
+ "retCode": 0,
+ "retMsg": "success",
+ "result": {
+  "category": "option",
+  "nextPageCursor": "",
+  "list": [
+   {
+    "symbolId": 379919,
+    "symbol": "ETH-25JUN27-7000-P-USDT",
+    "status": "Trading",
+    "baseCoin": "ETH",
+    "quoteCoin": "USDT",
+    "settleCoin": "USDT",
+    "optionsType": "Put",
+    "launchTime": "1787350800000",
+    "deliveryTime": "1813910400000",
+    "deliveryFeeRate": "0.00015",
+    "priceFilter": {
+     "minPrice": "0.1",
+     "maxPrice": "41000",
+     "tickSize": "0.1"
+    },
+    "lotSizeFilter": {
+     "maxOrderQty": "5000",
+     "minOrderQty": "0.1",
+     "qtyStep": "0.1"
+    },
+    "displayName": "ETHUSDT-25JUN27-7000-P"
+   },
+   {
+    "symbolId": 379918,
+    "symbol": "ETH-25JUN27-7000-C-USDT",
+    "status": "Trading",
+    "baseCoin": "ETH",
+    "quoteCoin": "USDT",
+    "settleCoin": "USDT",
+    "optionsType": "Call",
+    "launchTime": "1787350800000",
+    "deliveryTime": "1813910400000",
+    "deliveryFeeRate": "0.00015",
+    "priceFilter": {
+     "minPrice": "0.1",
+     "maxPrice": "41000",
+     "tickSize": "0.1"
+    },
+    "lotSizeFilter": {
+     "maxOrderQty": "5000",
+     "minOrderQty": "0.1",
+     "qtyStep": "0.1"
+    },
+    "displayName": "ETHUSDT-25JUN27-7000-C"
+   }
+  ]
+ },
+ "retExtInfo": {},
+ "time": 1791280840815
+}

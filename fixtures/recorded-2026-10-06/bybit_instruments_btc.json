@@ -1,0 +1,104 @@
+{
+ "retCode": 0,
+ "retMsg": "success",
+ "result": {
+  "category": "option",
+  "nextPageCursor": "",
+  "list": [
+   {
+    "symbolId": 402282,
+    "symbol": "BTC-23OCT26-98000-C-USDT",
+    "status": "Trading",
+    "baseCoin": "BTC",
+    "quoteCoin": "USDT",
+    "settleCoin": "USDT",
+    "optionsType": "Call",
+    "launchTime": "1790841600000",
+    "deliveryTime": "1792742400000",
+    "deliveryFeeRate": "0.00015",
+    "priceFilter": {
+     "minPrice": "5",
+     "maxPrice": "1110000",
+     "tickSize": "5"
+    },
+    "lotSizeFilter": {
+     "maxOrderQty": "500",
+     "minOrderQty": "0.01",
+     "qtyStep": "0.01"
+    },
+    "displayName": "BTCUSDT-23OCT26-98000-C"
+   },
+   {
+    "symbolId": 407055,
+    "symbol": "BTC-6OCT26-87250-P-USDT",
+    "status": "Delivering",
+    "baseCoin": "BTC",
+    "quoteCoin": "USDT",
+    "settleCoin": "USDT",
+    "optionsType": "Put",
+    "launchTime": "1791188400000",
+    "deliveryTime": "1791273600000",
+    "deliveryFeeRate": "0.00015",
+    "priceFilter": {
+     "minPrice": "5",
+     "maxPrice": "1110000",
+     "tickSize": "5"
+    },
+    "lotSizeFilter": {
+     "maxOrderQty": "500",
+     "minOrderQty": "0.01",
+     "qtyStep": "0.01"
+    },
+    "displayName": "BTCUSDT-6OCT26-87250-P"
+   },
+   {
+    "symbolId": 394577,
+    "symbol": "BTC-25JUN27-106000-P-USDT",
+    "status": "Trading",
+    "baseCoin": "BTC",
+    "quoteCoin": "USDT",
+    "settleCoin": "USDT",
+    "optionsType": "Put",
+    "launchTime": "1789950000000",
+    "deliveryTime": "1813910400000",
+    "deliveryFeeRate": "0.00015",
+    "priceFilter": {
+     "minPrice": "5",
+     "maxPrice": "1110000",
+     "tickSize": "5"
+    },
+    "lotSizeFilter": {
+     "maxOrderQty": "500",
+     "minOrderQty": "0.01",
+     "qtyStep": "0.01"
+    },
+    "displayName": "BTCUSDT-25JUN27-106000-P"
+   },
+   {
+    "symbolId": 379529,
+    "symbol": "BTC-25JUN27-160000-P-USDT",
+    "status": "Trading",
+    "baseCoin": "BTC",
+    "quoteCoin": "USDT",
+    "settleCoin": "USDT",
+    "optionsType": "Put",
+    "launchTime": "1787298600000",
+    "deliveryTime": "1813910400000",
+    "deliveryFeeRate": "0.00015",
+    "priceFilter": {
+     "minPrice": "5",
+     "maxPrice": "1110000",
+     "tickSize": "5"
+    },
+    "lotSizeFilter": {
+     "maxOrderQty": "500",
+     "minOrderQty": "0.01",
+     "qtyStep": "0.01"
+    },
+    "displayName": "BTCUSDT-25JUN27-160000-P"
+   }
+  ]
+ },
+ "retExtInfo": {},
+ "time": 1791280840577
+}

@@ -1,0 +1,43 @@
+{
+ "code": 0,
+ "msg": "Success",
+ "i18nArgs": null,
+ "data": {
+  "optionConfig": {
+   "BTCUSD": {
+    "symbol": "BTCUSD",
+    "takerFee": 0.0003,
+    "maxOrderNumber": 200,
+    "settle": "USD",
+    "priceDecimal": 0,
+    "limitMaxQty": 1000,
+    "tickDecimal": 0,
+    "tickSize": 1,
+    "greeksDecimal": 5,
+    "makerFee": 0.0003,
+    "marketMaxQty": 100,
+    "qtyDecimal": 2,
+    "maxPositionQty": 3000,
+    "base": "BTC",
+    "minQty": 0.01
+   },
+   "ETHUSD": {
+    "symbol": "ETHUSD",
+    "takerFee": 0.0003,
+    "maxOrderNumber": 200,
+    "settle": "USD",
+    "priceDecimal": 1,
+    "limitMaxQty": 10000,
+    "tickDecimal": 1,
+    "tickSize": 0.1,
+    "greeksDecimal": 5,
+    "makerFee": 0.0003,
+    "marketMaxQty": 1000,
+    "qtyDecimal": 1,
+    "maxPositionQty": 30000,
+    "base": "ETH",
+    "minQty": 0.1
+   }
+  }
+ }
+}

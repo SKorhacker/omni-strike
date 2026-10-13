@@ -1,0 +1,53 @@
+{
+ "jsonrpc": "2.0",
+ "result": {
+  "timestamp": 1791447094401,
+  "state": "open",
+  "stats": {
+   "high": null,
+   "low": null,
+   "price_change": null,
+   "volume": 0.0,
+   "volume_usd": 0.0
+  },
+  "greeks": {
+   "delta": -0.9675766561045192,
+   "gamma": 0.00038717967516515954,
+   "vega": 0.2757488747248395,
+   "theta": -0.5371377373177301,
+   "rho": -0.6271994821124605
+  },
+  "change_id": 58056,
+  "index_price": 2566.4,
+  "instrument_name": "ETH-20261016-2950-P",
+  "option_token_address": "0xb4ff4ed958da655e93df14a200275c2628e8991c",
+  "bids": [],
+  "asks": [
+   [
+    396.0,
+    0.011627
+   ]
+  ],
+  "last_price": 396.0,
+  "settlement_price": 396.0,
+  "min_price": 0.0,
+  "max_price": 396.0,
+  "open_interest": 0.0,
+  "mark_price": 396.0,
+  "theoretical_price": 380.5287564254836,
+  "best_bid_price": 0.0,
+  "best_ask_price": 396.0,
+  "mark_iv": 0.49310424724688573,
+  "ask_iv": 0.7754624082005472,
+  "underlying_price": 2566.4,
+  "underlying_index": "ETH_USD",
+  "interest_rate": 0.0,
+  "estimated_delivery_price": 2566.4,
+  "best_ask_amount": 0.011627,
+  "best_bid_amount": 0.0
+ },
+ "testnet": false,
+ "usDiff": 1,
+ "usIn": 1791447094401341,
+ "usOut": 1791447094401342
+}

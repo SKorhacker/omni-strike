@@ -1,0 +1,23 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Security issue? Do not file it here — use private reporting (see SECURITY.md). Never paste keys or secrets."
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: "Expected vs actual, with the request and the response (error code) if relevant." }
+    validations: { required: true }
+  - type: textarea
+    id: repro
+    attributes: { label: Steps to reproduce }
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes: { label: Commit / version, placeholder: "git rev-parse --short HEAD" }
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Trading mode
+      options: [READ_ONLY, SIMULATION, TESTNET, MAINNET_NONCUSTODIAL]

@@ -1,0 +1,68 @@
+[package]
+name = "oa-app"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Services, Kameo venue actors, persistence, HTTP API and MCP server."
+
+[[bin]]
+name = "oa-server"
+path = "src/bin/server.rs"
+
+[[bin]]
+name = "oa-mcp"
+path = "src/bin/mcp.rs"
+
+[[bin]]
+name = "oa-bench"
+path = "src/bin/bench.rs"
+
+[[bin]]
+name = "oa-load"
+path = "src/bin/load.rs"
+
+[features]
+# Opt-in tests against real public endpoints (read-only).
+live-tests = []
+# TESTNET mode (testnet market data, separate database). Off by default.
+testnet = []
+# MAINNET NON-CUSTODIAL execution: end users sign every order / send every transaction, the
+# server holds no key. Separate build, database and env file (docs/mainnet-noncustodial.md).
+mainnet-nc = []
+# Deliberately unbuildable: CUSTODIAL live execution does not exist (see lib.rs).
+live = []
+
+[dependencies]
+oa-core = { workspace = true, features = ["schema"] }
+oa-adapters.workspace = true
+async-trait.workspace = true
+axum = "0.8"
+chrono.workspace = true
+dotenvy = "0.15"
+futures-util = "0.3"
+hex.workspace = true
+sha2.workspace = true
+hmac = "0.12"
+# Global allocator of the binaries (measured with oa-bench).
+mimalloc = { version = "0.1", default-features = false }
+kameo = "=0.22.2"
+reqwest = { version = "0.13", default-features = false, features = ["json", "native-tls"] }
+rust_decimal.workspace = true
+rust_decimal_macros.workspace = true
+schemars = { version = "1.2", features = ["chrono04", "rust_decimal1", "uuid1"] }
+serde.workspace = true
+serde_json.workspace = true
+sqlx = { version = "0.8", default-features = false, features = ["runtime-tokio", "postgres", "migrate", "macros", "chrono", "uuid", "json"] }
+thiserror.workspace = true
+tokio.workspace = true
+tower = { version = "0.5", features = ["util"] }
+tower-http = { version = "0.6", features = ["compression-gzip", "compression-br"] }
+tracing.workspace = true
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+uuid.workspace = true
+
+[dev-dependencies]
+http-body-util = "0.1"
+k256 = { version = "0.13", features = ["ecdsa"] }

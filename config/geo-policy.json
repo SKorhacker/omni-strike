@@ -1,0 +1,850 @@
+{
+ "generated_at": "2026-10-08T00:00:00Z",
+ "venues": {
+  "derive": {
+   "restricted": [
+    "AU",
+    "CA",
+    "CD",
+    "CI",
+    "CU",
+    "IQ",
+    "IR",
+    "KP",
+    "LY",
+    "ML",
+    "MM",
+    "NI",
+    "PA",
+    "RU",
+    "SD",
+    "SO",
+    "SY",
+    "US",
+    "YE",
+    "ZW"
+   ],
+   "partial": [
+    {
+     "country": "UA",
+     "note": "Crimea, Donetsk, Luhansk regions only"
+    },
+    {
+     "country": "GB",
+     "note": "Only investment professionals / high-net-worth companies (FPO Art. 19/49); UK retail not eligible"
+    }
+   ],
+   "source_url": "https://www.derive.xyz/terms-of-use",
+   "quote": "ordinarily resident in Iran, Iraq, Libya, Mali, Nicaragua, Cuba, Democratic People's Republic of Korea (North Korea), Russia, Somalia, Sudan, Syria, Yemen, Zimbabwe, Myanmar (Burma), Cote D'Ivoire (Ivory Coast), Democratic Republic of Congo, the regions of Crimea, Donetsk, or Luhansk",
+   "confidence": "high",
+   "notes": "Restricted Person definition (clauses a-d) also covers US persons, Australian tax residents, all Canada residents/citizens (incl. Ontario) and Panama residents/tax residents. US/AU/PA apply to tax residency too, not only location."
+  },
+  "aevo": {
+   "restricted": [
+    "BY",
+    "CA",
+    "CD",
+    "CN",
+    "CU",
+    "GB",
+    "IR",
+    "KP",
+    "LB",
+    "LY",
+    "ML",
+    "MM",
+    "NI",
+    "RU",
+    "SD",
+    "SG",
+    "SO",
+    "SS",
+    "SY",
+    "US",
+    "VC",
+    "YE",
+    "ZW"
+   ],
+   "partial": [
+    {
+     "country": "UA",
+     "note": "Crimea, Donetsk, Luhansk regions only"
+    }
+   ],
+   "source_url": "https://app.aevo.xyz/terms",
+   "quote": "Restricted Territory shall mean Singapore, Saint Vincent and the Grenadines, Canada, the United Kingdom and the People's Republic of China, Belarus, Cuba, Democratic People's Republic of Korea (DPRK), Democratic Republic of Congo, Iran, Lebanon, Libya, Mali, Myanmar",
+   "confidence": "medium",
+   "notes": "Read from the rendered app ToS (JS page, read in browser). List continues: Nicaragua, Russia, Somalia, South Sudan, Sudan, Syria, Yemen, Zimbabwe, Crimea/Donetsk/Luhansk + any UN/EU/UK comprehensively sanctioned region. FLAG: the ToS text does NOT name the United States, so US is not in 'restricted' (never-guess rule), but Aevo has historically geoblocked US IPs; recommend the router block US anyway as a policy choice. No 'Last Updated' date visible. | US added by Omni Strike policy (Aevo historically excludes US persons; current terms do not name it)"
+  },
+  "paradex": {
+   "restricted": [
+    "CA",
+    "CU",
+    "FM",
+    "GU",
+    "IR",
+    "KP",
+    "MH",
+    "MP",
+    "PR",
+    "PW",
+    "SY",
+    "UM",
+    "US",
+    "VI"
+   ],
+   "partial": [
+    {
+     "country": "UA",
+     "note": "Crimea, Donetsk, Luhansk and Sevastopol regions only"
+    }
+   ],
+   "source_url": "https://www.paradex.trade/restricted-persons",
+   "quote": "These restricted territories are currently: Crimea, Donetsk, Luhansk, and Sevastopol regions of Ukraine Cuba Iran North Korea Syria Canada United States Micronesia (US associated territory) Guam (US associated territory) Marshall Islands",
+   "confidence": "high",
+   "notes": "List continues: Northern Mariana Islands, Puerto Rico, Palau, US Minor Outlying Islands, US Virgin Islands. Also any 'U.S. person' and 'Canadian person' regardless of location. ToS also bars persons/territories sanctioned by US, EU, UK, Singapore, UN."
+  },
+  "thetanuts": {
+   "restricted": [
+    "BD",
+    "BI",
+    "BO",
+    "BY",
+    "CA",
+    "CD",
+    "CI",
+    "CU",
+    "DZ",
+    "EC",
+    "IQ",
+    "IR",
+    "KP",
+    "LR",
+    "LY",
+    "MA",
+    "ML",
+    "MM",
+    "NP",
+    "SD",
+    "SO",
+    "SY",
+    "US",
+    "VE",
+    "YE",
+    "ZW"
+   ],
+   "partial": [
+    {
+     "country": "UA",
+     "note": "Crimea and Sevastopol only"
+    }
+   ],
+   "source_url": "https://docs.thetanuts.finance/other-information/terms-of-service",
+   "quote": "Restricted Territory means of Algeria, Bangladesh, Bolivia, Belarus, Burundi, Burma (Myanmar), Canada, Cote D'Ivoire (Ivory Coast), Crimea and Sevastopol, Cuba, Democratic Republic of Congo, Ecuador, Iran, Iraq, Liberia, Libya, Mali, Morocco, Nepal, North Korea",
+   "confidence": "medium",
+   "notes": "ToS dated November 18, 2023 (old; may not reflect V4). List continues: Somalia, Sudan, Syria, United States, Venezuela, Yemen, Zimbabwe + any country embargoed by Canada, Panama, US, UK or EU."
+  },
+  "deribit": {
+   "restricted": [
+    "AS",
+    "BY",
+    "CA",
+    "CF",
+    "CG",
+    "CU",
+    "GU",
+    "IQ",
+    "IR",
+    "JP",
+    "KP",
+    "LY",
+    "MM",
+    "PR",
+    "RU",
+    "SD",
+    "SO",
+    "SS",
+    "SY",
+    "US",
+    "VI",
+    "YE"
+   ],
+   "partial": [
+    {
+     "country": "PA",
+     "note": "Retail investors may only trade spot (no options for retail)"
+    },
+    {
+     "country": "AE",
+     "note": "Retail investors may only trade spot (no options for retail)"
+    },
+    {
+     "country": "GB",
+     "note": "Retail clients not allowed (professional only)"
+    },
+    {
+     "country": "UA",
+     "note": "Sanctioned regions of Crimea, Donetsk and Luhansk only"
+    },
+    {
+     "country": "CD",
+     "note": "Source says only 'Congo' (ISO short name = Republic of the Congo, CG); DRC possibly intended - block conservatively"
+    }
+   ],
+   "source_url": "https://support.deribit.com/hc/en-us/articles/25944487427741-Restricted-Jurisdictions",
+   "quote": "not allowed if you are located, incorporated or otherwise established in, or a resident of, any of the jurisdictions in the overview below: Belarus ... Canada Central African Republic Congo Cuba Guam Iran Iraq Japan",
+   "confidence": "high",
+   "notes": "Page updated October 06, 2026. Belarus/Russia also cover nationals residing abroad unless they hold EEA/Swiss nationality or residence permit. For an options router PA/AE/GB retail users must be treated as restricted."
+  },
+  "okx": {
+   "restricted": [
+    "AF",
+    "AS",
+    "AU",
+    "BR",
+    "CA",
+    "CU",
+    "GB",
+    "GU",
+    "HK",
+    "IN",
+    "IR",
+    "JP",
+    "KP",
+    "KR",
+    "MP",
+    "MY",
+    "NP",
+    "PR",
+    "SY",
+    "US",
+    "UZ",
+    "VI"
+   ],
+   "partial": [
+    {
+     "country": "UA",
+     "note": "Crimea, Donetsk, Luhansk regions only"
+    },
+    {
+     "country": "BS",
+     "note": "Retail products restricted"
+    },
+    {
+     "country": "ER",
+     "note": "P2P only restricted"
+    },
+    {
+     "country": "RU",
+     "note": "Fiat payment services only restricted"
+    }
+   ],
+   "source_url": "https://www.okx.com/help/risk-compliance-disclosure",
+   "quote": "Restricted Locations, which at this time include Afghanistan, Canada, Cuba, Hong Kong, Iran, India, Japan, Malaysia, Nepal, North Korea, Syria, the Crimea, Donetsk and Luhansk regions of Ukraine, certain jurisdictions within the United States",
+   "confidence": "high",
+   "notes": "Risk & Compliance Disclosure updated 8 July 2026 (ToS clause 2.2 points there). AU, BR, KR, GB are restricted specifically for derivatives-related services, so they are in 'restricted' for an options router. Text says 'certain jurisdictions within the United States including all U.S. territories': whole US blocked conservatively. FLAG: EEA users are onboarded by the OKX EEA entity under a separate EEA disclosure, not reviewed here."
+  },
+  "bybit": {
+   "restricted": [
+    "CA",
+    "CN",
+    "CU",
+    "HK",
+    "IR",
+    "KP",
+    "SD",
+    "SG",
+    "SY",
+    "US",
+    "UZ"
+   ],
+   "partial": [
+    {
+     "country": "UA",
+     "note": "Russian-controlled regions: Crimea, Donetsk, Luhansk, Sevastopol"
+    },
+    {
+     "country": "RU",
+     "note": "Rostov region listed among 'Russian-controlled regions of Ukraine' (as written)"
+    },
+    {
+     "country": "AE",
+     "note": "Dubai only, and only for Bybit Virtual Asset Platform Operator LLC"
+    }
+   ],
+   "source_url": "https://www.bybit.com/en/help-center/article/Service-Restricted-Countries",
+   "quote": "Bybit does not offer services or products to Users in a few excluded jurisdictions including the United States, the Chinese Mainland, Hong Kong, Singapore, Canada, North Korea, Cuba, Iran, Uzbekistan, Russian-controlled regions of Ukraine",
+   "confidence": "high",
+   "notes": "Section 11.3 of Bybit Platform T&Cs. Regional entities (Bybit EU etc.) may have their own product restrictions (not reviewed)."
+  },
+  "binance": {
+   "restricted": [
+    "AU",
+    "CA",
+    "CU",
+    "DE",
+    "HK",
+    "IR",
+    "IT",
+    "KP",
+    "NL",
+    "SY",
+    "US"
+   ],
+   "partial": [
+    {
+     "country": "UA",
+     "note": "Crimea and non-government-controlled areas"
+    },
+    {
+     "country": "GB",
+     "note": "FCA restrictions; derivatives not offered to UK retail (not verified on official page)"
+    }
+   ],
+   "source_url": "https://www.binance.com/en/legal/list-of-prohibited-countries",
+   "quote": "Canada, Netherlands, USA, Cuba, Democratic People's Republic of Korea (\"North Korea\"), Iran, Syria, and Crimea and any non-government controlled areas of Ukraine",
+   "confidence": "low",
+   "notes": "FLAG: binance.com legal pages are bot-walled for automated readers; quote is from search-engine snippets of binance.com pages, not read directly. DE, IT, NL derivatives wound down and HK/AU options restricted per official Binance announcements. Unverified search claim that Binance stopped EU services on 1 July 2026 (MiCA): if true, all EEA must be blocked; verify before go-live."
+  },
+  "bullish": {
+   "restricted": [
+    "CA",
+    "CN",
+    "CU",
+    "IL",
+    "IR",
+    "JP",
+    "KP",
+    "RU",
+    "SY",
+    "US"
+   ],
+   "partial": [
+    {
+     "country": "DE",
+     "note": "Bullish Europe GmbH serves only German-resident professional clients"
+    }
+   ],
+   "source_url": "https://www.bullish.com/eu/legal/exchange-terms-of-service",
+   "quote": "does not provide services in certain jurisdictions, including the United States, Canada, People's Republic of China (excluding, for the avoidance of doubt, Hong Kong S.A.R, Macau S.A.R and Taiwan), Japan, Israel, and Russia",
+   "confidence": "medium",
+   "notes": "Global Bullish (GI) Exchange ToS (23 June 2026 PDF) bars citizens/residents of the US and 'Prohibited Jurisdictions: countries and territories targeted by Sanctions Laws' (unnamed, mapped to CU IR KP SY). Eligible US states get BTC/ETH spot only (no options). The global site geo-redirects by region; full eligible-jurisdiction list not found."
+  },
+  "coincall": {
+   "restricted": [
+    "AE",
+    "AM",
+    "AT",
+    "AU",
+    "BA",
+    "BD",
+    "BG",
+    "BH",
+    "BO",
+    "BY",
+    "CA",
+    "CD",
+    "CN",
+    "CO",
+    "CU",
+    "CY",
+    "CZ",
+    "DE",
+    "DK",
+    "DZ",
+    "EC",
+    "EE",
+    "EG",
+    "FI",
+    "GB",
+    "GR",
+    "GU",
+    "GY",
+    "HU",
+    "ID",
+    "IL",
+    "IN",
+    "IQ",
+    "IR",
+    "IS",
+    "IT",
+    "JO",
+    "JP",
+    "KP",
+    "KZ",
+    "LB",
+    "LI",
+    "LT",
+    "LU",
+    "LV",
+    "MA",
+    "MM",
+    "MT",
+    "MY",
+    "NL",
+    "NO",
+    "NZ",
+    "PA",
+    "PR",
+    "PT",
+    "RO",
+    "RW",
+    "SA",
+    "SD",
+    "SG",
+    "SI",
+    "SK",
+    "SS",
+    "SY",
+    "TH",
+    "UG",
+    "US",
+    "VE",
+    "VI",
+    "VN",
+    "WS"
+   ],
+   "partial": [
+    {
+     "country": "UA",
+     "note": "Crimea only"
+    },
+    {
+     "country": "AS",
+     "note": "Source says 'Samoa' (mapped to WS); American Samoa may be intended - block conservatively"
+    }
+   ],
+   "source_url": "https://support.coincall.com/hc/en-us/articles/16546241282457-Restricted-Countries-and-Regions",
+   "quote": "not allowed if you are located, incorporated, or otherwise established as a citizen or a resident of any of the countries in the overview below: United States Guam Puerto Rico Virgin Islands (U.S.) North Korea Cuba Iran",
+   "confidence": "high",
+   "notes": "Updated January 22, 2026. List also has an ambiguous entry 'America' (ignored) and says other jurisdictions may be (partially) restricted. Notably FR, ES, BE, IE, PL, SE, HR are NOT listed."
+  },
+  "gate": {
+   "restricted": [
+    "AE",
+    "AR",
+    "AT",
+    "CA",
+    "CN",
+    "CU",
+    "DE",
+    "ES",
+    "FR",
+    "GB",
+    "HK",
+    "ID",
+    "IN",
+    "IR",
+    "JP",
+    "KH",
+    "KP",
+    "KR",
+    "MM",
+    "MT",
+    "MY",
+    "NL",
+    "PH",
+    "PK",
+    "RU",
+    "SD",
+    "SG",
+    "SY",
+    "TH",
+    "US",
+    "UZ",
+    "VE",
+    "VN"
+   ],
+   "partial": [
+    {
+     "country": "UA",
+     "note": "Crimea, Donetsk, Luhansk regions only"
+    }
+   ],
+   "source_url": "https://www.gate.com/legal/user-agreement",
+   "quote": "The Restricted Locations include but are not limited to the United States of America, Mainland China, Singapore, Canada, France, Germany, Hong Kong, Malaysia, Malta, Cuba, Iran, North Korea, Sudan, Crimea Region, Spain, Luhansk, Donetsk, Netherlands, UK",
+   "confidence": "medium",
+   "notes": "Clause 2.5 of User Agreement, read via WebFetch (direct curl returns 403). No date shown. List continues: Myanmar, Venezuela, Uzbekistan, Austria, India, Indonesia, Japan, Argentina, Cambodia, UAE, Thailand, South Korea, Philippines, Pakistan, Vietnam, Russia. A third-party snippet also lists Bolivia (not in the fetched text). | Omni Strike baseline added (sanctions): ['SY']"
+  },
+  "delta": {
+   "restricted": [
+    "AE",
+    "AF",
+    "AT",
+    "BE",
+    "BG",
+    "CA",
+    "CU",
+    "CY",
+    "CZ",
+    "DE",
+    "DK",
+    "EE",
+    "ES",
+    "FI",
+    "FR",
+    "GB",
+    "GF",
+    "GR",
+    "HR",
+    "HU",
+    "IE",
+    "IN",
+    "IR",
+    "IS",
+    "IT",
+    "KH",
+    "KP",
+    "LI",
+    "LT",
+    "LU",
+    "LV",
+    "MT",
+    "NL",
+    "NO",
+    "PL",
+    "PR",
+    "PT",
+    "RO",
+    "RU",
+    "SE",
+    "SG",
+    "SI",
+    "SK",
+    "SY",
+    "US",
+    "VC",
+    "VI"
+   ],
+   "partial": [
+    {
+     "country": "UA",
+     "note": "Crimea only"
+    },
+    {
+     "country": "HK",
+     "note": "Spot crypto trading only restricted (derivatives allowed)"
+    }
+   ],
+   "source_url": "https://global.delta.exchange/terms-of-use",
+   "quote": "We do not provide services to: Persons (natural or legal) that are citizens or residents of United States of America (including Puerto Rico, the U.S. Virgin Islands), Afghanistan, Russia, Iran or North Korea.",
+   "confidence": "high",
+   "notes": "Delta Exchange Global ToS section 2.2. Second list (residents/located): India, Cambodia, Crimea, Cuba, Canada, Syria, St Vincent & the Grenadines, all EU/EEA states incl. French Guiana, UK, UAE. Singapore: natural persons restricted (legal persons: spot only restricted). delta.exchange (India) is a separate India-only platform."
+  },
+  "kalshi": {
+   "restricted": [
+    "AE",
+    "AF",
+    "AO",
+    "AU",
+    "BE",
+    "BF",
+    "BG",
+    "BO",
+    "BY",
+    "CA",
+    "CD",
+    "CF",
+    "CH",
+    "CI",
+    "CM",
+    "CN",
+    "CU",
+    "DZ",
+    "ET",
+    "FR",
+    "GB",
+    "HT",
+    "HU",
+    "IE",
+    "IQ",
+    "IR",
+    "IT",
+    "KE",
+    "KP",
+    "LA",
+    "LB",
+    "LY",
+    "MC",
+    "ML",
+    "MM",
+    "MZ",
+    "NA",
+    "NE",
+    "NI",
+    "NZ",
+    "PL",
+    "PT",
+    "RU",
+    "SD",
+    "SG",
+    "SO",
+    "SS",
+    "SY",
+    "TH",
+    "TW",
+    "UA",
+    "VE",
+    "YE",
+    "ZW"
+   ],
+   "partial": [],
+   "source_url": "https://kalshi.com/docs/kalshi-member-agreement.pdf",
+   "quote": "",
+   "confidence": "medium",
+   "notes": "Kalshi works as a BLOCKLIST, not an allowlist: US (CFTC DCM) plus ~140 countries allowed; 54 named jurisdictions (Member Agreement v1.6, Section VI) plus comprehensively US-sanctioned territories barred. FLAG: official PDF sits behind a Vercel bot checkpoint (not bypassed); list taken from coinperps.com article citing the agreement; help.kalshi.com only says eligibility is per the Member Agreement. No verbatim official quote available. Applies to event contracts; perps have separate access rules."
+  },
+  "hyperliquid": {
+   "restricted": [
+    "CU",
+    "IR",
+    "KP",
+    "MM",
+    "SY",
+    "US"
+   ],
+   "partial": [
+    {
+     "country": "CA",
+     "note": "Ontario only"
+    },
+    {
+     "country": "UA",
+     "note": "Russian-occupied regions (Crimea, Donetsk, Luhansk)"
+    }
+   ],
+   "source_url": "https://app.hyperliquid.xyz/terms",
+   "quote": "Restricted Persons include: (a) persons or entities who reside in, are located in, are incorporated in, or have a registered office in the United States of America or Ontario, Canada",
+   "confidence": "medium",
+   "notes": "ToS last updated June 15, 2026 (read from the app's TermsOfUse JS chunk). Clause (b) bars sanctioned jurisdictions without naming them; named list (Ontario, US, Cuba, Iran, Myanmar, North Korea, Syria, Russian-occupied regions of Ukraine) is from HL docs (Foundation delegation program). Clause (c) also bars citizens of Restricted Territories regardless of location. Outcome markets have extra unlisted 'Excluded Persons'."
+  },
+  "polymarket": {
+   "restricted": [
+    "AU",
+    "BE",
+    "BI",
+    "BY",
+    "CD",
+    "CF",
+    "CU",
+    "DE",
+    "ET",
+    "FR",
+    "GB",
+    "IQ",
+    "IR",
+    "IT",
+    "KP",
+    "LB",
+    "LY",
+    "MM",
+    "NI",
+    "PL",
+    "RU",
+    "SD",
+    "SG",
+    "SO",
+    "SS",
+    "SY",
+    "TH",
+    "TW",
+    "UM",
+    "US",
+    "VE",
+    "YE",
+    "ZW"
+   ],
+   "partial": [
+    {
+     "country": "CA",
+     "note": "Ontario only"
+    },
+    {
+     "country": "UA",
+     "note": "Crimea, Donetsk, Luhansk regions only"
+    }
+   ],
+   "source_url": "https://github.com/Estimate-Labs/Polymarket-Strategies/blob/main/docs/polymarket-learn/FAQ/geoblocking.md",
+   "quote": "The following 33 countries are completely restricted from accessing Polymarket",
+   "confidence": "medium",
+   "notes": "FLAG: polymarket.com (incl. docs) is DNS-blocked in some jurisdictions (e.g. by the French regulator ANJ); never bypassed. List from a GitHub mirror of docs.polymarket.com/polymarket-learn/FAQ/geoblocking plus search snippets of docs.polymarket.com/api-reference/geoblock. SG, PL, TH, TW are 'close-only' (no new positions), treated as restricted. A newer snippet mentions ~36 close-only jurisdictions, so the live list may be longer; Polymarket's geoblock API is the authoritative runtime source. Polymarket US (CFTC) is a separate venue."
+  },
+  "limitless": {
+   "restricted": [
+    "BY",
+    "CN",
+    "CU",
+    "IR",
+    "KP",
+    "RU",
+    "SY",
+    "TW",
+    "US"
+   ],
+   "partial": [
+    {
+     "country": "CA",
+     "note": "Ontario and Alberta only"
+    },
+    {
+     "country": "UA",
+     "note": "Crimea, Donetsk, Luhansk regions only"
+    }
+   ],
+   "source_url": "https://docs.limitless.exchange/user-guide/terms-of-service",
+   "quote": "The Platform is not available for trading to users from the following jurisdictions: United States of America, Republic of China, and the Canadian provinces of Ontario (ON) and Alberta (AB).",
+   "confidence": "high",
+   "notes": "ToS last updated September 15, 2026. Access (not just trading) barred from Russia, Belarus, Cuba, Iran, North Korea, Syria, Crimea/Donetsk/Luhansk. 'Republic of China' literally = Taiwan but probably means PRC, so both CN and TW are blocked conservatively."
+  },
+  "myriad": {
+   "restricted": [
+    "BS",
+    "BW",
+    "CH",
+    "CU",
+    "FR",
+    "IR",
+    "KH",
+    "KP",
+    "KY",
+    "LY",
+    "MT",
+    "SD",
+    "SG",
+    "SO",
+    "SY",
+    "TT",
+    "US",
+    "VG",
+    "ZW"
+   ],
+   "partial": [
+    {
+     "country": "CA",
+     "note": "Ontario only"
+    }
+   ],
+   "source_url": "https://help.myriad.markets/myriad-terms-of-use",
+   "quote": "Use of the Interface or Services for trading in Supported Contracts is not permitted by persons or entities residing in or associated with the following jurisdictions:",
+   "confidence": "high",
+   "notes": "ToS updated January 13, 2026 (Notion page, read in browser). Followed by: Bahamas, Botswana, BVI, Cambodia, Cayman Islands, North Korea, France, Iran, Libya, Malta, Ontario CA, Somalia, Sudan, Syria, Singapore, Switzerland, Trinidad and Tobago, USA, Zimbabwe. Plus US/UK/EU/UN sanctions-list persons. | Omni Strike baseline added (sanctions): ['CU']"
+  },
+  "callput": {
+   "restricted": [
+    "CU",
+    "IR",
+    "KP",
+    "SY"
+   ],
+   "partial": [],
+   "source_url": "https://docs.callput.app/terms-of-use",
+   "quote": "Callput may restrict, block, or limit access from certain jurisdictions, wallet addresses, interfaces, or users at any time, without notice, where required by law",
+   "confidence": "low",
+   "notes": "Terms of Use (May 14, 2026) and Disclaimer name NO specific countries. Product is synthetic US-stock/ETF options (TSLA, NVDA, SPY...), so regulatory risk for US persons is high; recommend blocking at least US + CU IR KP SY as a router policy choice. | Omni Strike baseline added (sanctions): ['CU', 'IR', 'KP', 'SY']"
+  },
+  "hegic": {
+   "restricted": [
+    "CU",
+    "IR",
+    "KP",
+    "SY"
+   ],
+   "partial": [],
+   "source_url": "https://www.hegic.co/app",
+   "quote": "",
+   "confidence": "low",
+   "notes": "No terms of service or restricted-jurisdiction page found on hegic.co (site and app have no legal links) or in search results. Recommend router default policy (US + CU IR KP SY) until an official list is found. | Omni Strike baseline added (sanctions): ['CU', 'IR', 'KP', 'SY']"
+  },
+  "rysk": {
+   "restricted": [
+    "AG",
+    "BD",
+    "BI",
+    "BO",
+    "BY",
+    "CD",
+    "CI",
+    "CU",
+    "DZ",
+    "EC",
+    "GB",
+    "IQ",
+    "IR",
+    "KP",
+    "LR",
+    "LY",
+    "MA",
+    "ML",
+    "MM",
+    "NP",
+    "SD",
+    "SO",
+    "SY",
+    "TW",
+    "US",
+    "VE",
+    "ZW"
+   ],
+   "partial": [
+    {
+     "country": "UA",
+     "note": "Crimea and Sevastopol only"
+    }
+   ],
+   "source_url": "https://docs.rysk.finance/resources/terms-of-service",
+   "quote": "You are not a resident, national or agent of Antigua and Barbuda, Algeria, Bangladesh, Bolivia, Belarus, Burundi, Myanmar (Burma), Cote D'Ivoire (Ivory Coast), Crimea and Sevastopol, Cuba, Democratic Republic of Congo, Ecuador, Iran, Iraq",
+   "confidence": "high",
+   "notes": "ToS (Ksyr Corp) last updated 18.2.2025. List continues: Libya, Mali, Morocco, 'Magnitsky' (not a country, ignored), Liberia, Nepal, North Korea, Somalia, Sudan, Syria, Venezuela, Zimbabwe + US/UK/EU embargoed. Separately bars US, UK and Taiwan residents/citizens."
+  },
+  "hypercall": {
+   "restricted": [
+    "AT",
+    "AU",
+    "BE",
+    "BG",
+    "CA",
+    "CU",
+    "CY",
+    "CZ",
+    "DE",
+    "DK",
+    "EE",
+    "ES",
+    "FI",
+    "FR",
+    "GB",
+    "GR",
+    "HR",
+    "HU",
+    "IE",
+    "IR",
+    "IS",
+    "IT",
+    "KP",
+    "KY",
+    "LI",
+    "LT",
+    "LU",
+    "LV",
+    "MT",
+    "NL",
+    "NO",
+    "PA",
+    "PL",
+    "PT",
+    "RO",
+    "SE",
+    "SI",
+    "SK",
+    "SY",
+    "US"
+   ],
+   "partial": [],
+   "source_url": "https://app.hypercall.xyz/legal/terms",
+   "quote": "subject to the laws of Australia, Canada, Ontario, the United Kingdom, the European Economic Area, the Cayman Islands, Panama, or any other jurisdiction listed in the Restricted Jurisdictions Schedule",
+   "confidence": "medium",
+   "notes": "ToS section 2.2 (Restricted Persons) also covers all US persons and comprehensively sanctioned jurisdictions (US/UK/EU/UN/Cayman; unnamed, mapped to CU IR KP SY). EEA expanded to 30 states. FLAG: the referenced 'Restricted Jurisdictions Schedule' was not found in the page text, so the list may be longer."
+  }
+ },
+ "policy_notes": "Compiled 2026-10-08 from each venue's official terms (see source_url/quote/confidence per venue). Conservative additions are marked in notes. Low/medium-confidence entries (binance, kalshi, polymarket, callput, hegic) must be re-verified before production. Venues not listed here = no restriction data = not filtered."
+}

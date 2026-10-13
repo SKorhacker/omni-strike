@@ -1,0 +1,67 @@
+{
+ "code": 0,
+ "msg": "Success",
+ "i18nArgs": null,
+ "data": [
+  {
+   "baseCurrency": "BTC",
+   "startTimestamp": 1791100860021,
+   "expirationTimestamp": 1791446400000,
+   "strike": 86000.0,
+   "symbolName": "BTCUSD-8OCT26-86000-C",
+   "isActive": true,
+   "minQty": 0.01,
+   "tickSize": 1
+  },
+  {
+   "baseCurrency": "BTC",
+   "startTimestamp": 1791100860021,
+   "expirationTimestamp": 1791446400000,
+   "strike": 86000.0,
+   "symbolName": "BTCUSD-8OCT26-86000-P",
+   "isActive": true,
+   "minQty": 0.01,
+   "tickSize": 1
+  },
+  {
+   "baseCurrency": "BTC",
+   "startTimestamp": 1791100860021,
+   "expirationTimestamp": 1791446400000,
+   "strike": 86500.0,
+   "symbolName": "BTCUSD-8OCT26-86500-C",
+   "isActive": true,
+   "minQty": 0.01,
+   "tickSize": 1
+  },
+  {
+   "baseCurrency": "BTC",
+   "startTimestamp": 1791100860021,
+   "expirationTimestamp": 1791446400000,
+   "strike": 86500.0,
+   "symbolName": "BTCUSD-8OCT26-86500-P",
+   "isActive": true,
+   "minQty": 0.01,
+   "tickSize": 1
+  },
+  {
+   "baseCurrency": "BTC",
+   "startTimestamp": 1791100860021,
+   "expirationTimestamp": 1791446400000,
+   "strike": 85500.0,
+   "symbolName": "BTCUSD-8OCT26-85500-C",
+   "isActive": true,
+   "minQty": 0.01,
+   "tickSize": 1
+  },
+  {
+   "baseCurrency": "BTC",
+   "startTimestamp": 1791100860021,
+   "expirationTimestamp": 1791446400000,
+   "strike": 85500.0,
+   "symbolName": "BTCUSD-8OCT26-85500-P",
+   "isActive": true,
+   "minQty": 0.01,
+   "tickSize": 1
+  }
+ ]
+}

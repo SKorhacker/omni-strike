@@ -1,0 +1,18 @@
+# Local development database only (the production stack is deploy/docker-compose.yml).
+#   export OA_PG_PASSWORD=$(openssl rand -hex 16) && docker compose up -d
+#   DATABASE_URL=postgres://oa:$OA_PG_PASSWORD@127.0.0.1:5433/options_aggregator
+# Testnet / mainnet-nc profiles need their own database:
+#   docker compose exec postgres createdb -U oa options_aggregator_testnet
+services:
+  postgres:
+    image: postgres:16.4
+    environment:
+      POSTGRES_USER: oa
+      POSTGRES_PASSWORD: ${OA_PG_PASSWORD:?set OA_PG_PASSWORD}
+      POSTGRES_DB: options_aggregator
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - oa-pg:/var/lib/postgresql/data
+volumes:
+  oa-pg:

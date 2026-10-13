@@ -1,0 +1,313 @@
+{
+    "timezone":  "UTC",
+    "serverTime":  1791280550125,
+    "optionContracts":  [
+                            {
+                                "baseAsset":  "XAG",
+                                "quoteAsset":  "USDT",
+                                "underlying":  "XAGUSDT",
+                                "settleAsset":  "USDT",
+                                "nakedSell":  false
+                            },
+                            {
+                                "baseAsset":  "BTC",
+                                "quoteAsset":  "USDT",
+                                "underlying":  "BTCUSDT",
+                                "settleAsset":  "USDT",
+                                "nakedSell":  true
+                            },
+                            {
+                                "baseAsset":  "CL",
+                                "quoteAsset":  "USDT",
+                                "underlying":  "CLUSDT",
+                                "settleAsset":  "USDT",
+                                "nakedSell":  false
+                            },
+                            {
+                                "baseAsset":  "ETH",
+                                "quoteAsset":  "USDT",
+                                "underlying":  "ETHUSDT",
+                                "settleAsset":  "USDT",
+                                "nakedSell":  true
+                            },
+                            {
+                                "baseAsset":  "BZ",
+                                "quoteAsset":  "USDT",
+                                "underlying":  "BZUSDT",
+                                "settleAsset":  "USDT",
+                                "nakedSell":  false
+                            },
+                            {
+                                "baseAsset":  "BNB",
+                                "quoteAsset":  "USDT",
+                                "underlying":  "BNBUSDT",
+                                "settleAsset":  "USDT",
+                                "nakedSell":  false
+                            },
+                            {
+                                "baseAsset":  "SOL",
+                                "quoteAsset":  "USDT",
+                                "underlying":  "SOLUSDT",
+                                "settleAsset":  "USDT",
+                                "nakedSell":  false
+                            },
+                            {
+                                "baseAsset":  "XRP",
+                                "quoteAsset":  "USDT",
+                                "underlying":  "XRPUSDT",
+                                "settleAsset":  "USDT",
+                                "nakedSell":  false
+                            },
+                            {
+                                "baseAsset":  "DOGE",
+                                "quoteAsset":  "USDT",
+                                "underlying":  "DOGEUSDT",
+                                "settleAsset":  "USDT",
+                                "nakedSell":  false
+                            },
+                            {
+                                "baseAsset":  "XAU",
+                                "quoteAsset":  "USDT",
+                                "underlying":  "XAUUSDT",
+                                "settleAsset":  "USDT",
+                                "nakedSell":  false
+                            }
+                        ],
+    "optionAssets":  [
+                         {
+                             "name":  "USDT"
+                         }
+                     ],
+    "optionSymbols":  [
+                          {
+                              "expiryDate":  1798185600000,
+                              "filters":  [
+                                              {
+                                                  "filterType":  "PRICE_FILTER",
+                                                  "minPrice":  "1385.000",
+                                                  "maxPrice":  "12440.000",
+                                                  "tickSize":  "5.000"
+                                              },
+                                              {
+                                                  "filterType":  "LOT_SIZE",
+                                                  "minQty":  "0.01",
+                                                  "maxQty":  "200",
+                                                  "stepSize":  "0.01"
+                                              }
+                                          ],
+                              "symbol":  "BTC-261225-85000-C",
+                              "side":  "CALL",
+                              "strikePrice":  "85000.000",
+                              "underlying":  "BTCUSDT",
+                              "unit":  1,
+                              "liquidationFeeRate":  "0.001900",
+                              "minQty":  "0.01",
+                              "maxQty":  "200",
+                              "initialMargin":  "0.15000000",
+                              "maintenanceMargin":  "0.07500000",
+                              "minInitialMargin":  "0.10000000",
+                              "minMaintenanceMargin":  "0.05000000",
+                              "priceScale":  3,
+                              "quantityScale":  2,
+                              "quoteAsset":  "USDT",
+                              "status":  "TRADING",
+                              "contractType":  "CRYPTO_OPTIONS",
+                              "underlyingType":  "CRYPTO"
+                          },
+                          {
+                              "expiryDate":  1798185600000,
+                              "filters":  [
+                                              {
+                                                  "filterType":  "PRICE_FILTER",
+                                                  "minPrice":  "89.6000",
+                                                  "maxPrice":  "805.6000",
+                                                  "tickSize":  "0.2000"
+                                              },
+                                              {
+                                                  "filterType":  "LOT_SIZE",
+                                                  "minQty":  "0.01",
+                                                  "maxQty":  "2500",
+                                                  "stepSize":  "0.01"
+                                              }
+                                          ],
+                              "symbol":  "ETH-261225-2400-C",
+                              "side":  "CALL",
+                              "strikePrice":  "2400.0000",
+                              "underlying":  "ETHUSDT",
+                              "unit":  1,
+                              "liquidationFeeRate":  "0.001900",
+                              "minQty":  "0.01",
+                              "maxQty":  "2500",
+                              "initialMargin":  "0.15000000",
+                              "maintenanceMargin":  "0.07500000",
+                              "minInitialMargin":  "0.10000000",
+                              "minMaintenanceMargin":  "0.05000000",
+                              "priceScale":  4,
+                              "quantityScale":  2,
+                              "quoteAsset":  "USDT",
+                              "status":  "TRADING",
+                              "contractType":  "CRYPTO_OPTIONS",
+                              "underlyingType":  "CRYPTO"
+                          },
+                          {
+                              "expiryDate":  1791360000000,
+                              "filters":  [
+                                              {
+                                                  "filterType":  "PRICE_FILTER",
+                                                  "minPrice":  "30.000",
+                                                  "maxPrice":  "750.000",
+                                                  "tickSize":  "5.000"
+                                              },
+                                              {
+                                                  "filterType":  "LOT_SIZE",
+                                                  "minQty":  "0.01",
+                                                  "maxQty":  "200",
+                                                  "stepSize":  "0.01"
+                                              }
+                                          ],
+                              "symbol":  "BTC-261007-87000-C",
+                              "side":  "CALL",
+                              "strikePrice":  "87000.000",
+                              "underlying":  "BTCUSDT",
+                              "unit":  1,
+                              "liquidationFeeRate":  "0.001900",
+                              "minQty":  "0.01",
+                              "maxQty":  "200",
+                              "initialMargin":  "0.15000000",
+                              "maintenanceMargin":  "0.07500000",
+                              "minInitialMargin":  "0.10000000",
+                              "minMaintenanceMargin":  "0.05000000",
+                              "priceScale":  3,
+                              "quantityScale":  2,
+                              "quoteAsset":  "USDT",
+                              "status":  "TRADING",
+                              "contractType":  "CRYPTO_OPTIONS",
+                              "underlyingType":  "CRYPTO"
+                          },
+                          {
+                              "expiryDate":  1791360000000,
+                              "filters":  [
+                                              {
+                                                  "filterType":  "PRICE_FILTER",
+                                                  "minPrice":  "125.000",
+                                                  "maxPrice":  "1115.000",
+                                                  "tickSize":  "5.000"
+                                              },
+                                              {
+                                                  "filterType":  "LOT_SIZE",
+                                                  "minQty":  "0.01",
+                                                  "maxQty":  "200",
+                                                  "stepSize":  "0.01"
+                                              }
+                                          ],
+                              "symbol":  "BTC-261007-86500-P",
+                              "side":  "PUT",
+                              "strikePrice":  "86500.000",
+                              "underlying":  "BTCUSDT",
+                              "unit":  1,
+                              "liquidationFeeRate":  "0.001900",
+                              "minQty":  "0.01",
+                              "maxQty":  "200",
+                              "initialMargin":  "0.15000000",
+                              "maintenanceMargin":  "0.07500000",
+                              "minInitialMargin":  "0.10000000",
+                              "minMaintenanceMargin":  "0.05000000",
+                              "priceScale":  3,
+                              "quantityScale":  2,
+                              "quoteAsset":  "USDT",
+                              "status":  "TRADING",
+                              "contractType":  "CRYPTO_OPTIONS",
+                              "underlyingType":  "CRYPTO"
+                          },
+                          {
+                              "expiryDate":  1791579600000,
+                              "filters":  [
+                                              {
+                                                  "filterType":  "PRICE_FILTER",
+                                                  "minPrice":  "18.57",
+                                                  "maxPrice":  "167.21",
+                                                  "tickSize":  "0.01"
+                                              },
+                                              {
+                                                  "filterType":  "LOT_SIZE",
+                                                  "minQty":  "0.01",
+                                                  "maxQty":  "2000",
+                                                  "stepSize":  "0.01"
+                                              }
+                                          ],
+                              "symbol":  "XAU-261009-4075-C",
+                              "side":  "CALL",
+                              "strikePrice":  "4075.00",
+                              "underlying":  "XAUUSDT",
+                              "unit":  1,
+                              "liquidationFeeRate":  "0.001900",
+                              "minQty":  "0.01",
+                              "maxQty":  "2000",
+                              "initialMargin":  "0.15000000",
+                              "maintenanceMargin":  "0.07500000",
+                              "minInitialMargin":  "0.10000000",
+                              "minMaintenanceMargin":  "0.05000000",
+                              "priceScale":  2,
+                              "quantityScale":  2,
+                              "quoteAsset":  "USDT",
+                              "status":  "TRADING",
+                              "contractType":  "TRADFI_OPTIONS",
+                              "underlyingType":  "COMMODITY"
+                          },
+                          {
+                              "expiryDate":  1793347200000,
+                              "filters":  [
+                                              {
+                                                  "filterType":  "PRICE_FILTER",
+                                                  "minPrice":  "0.9900",
+                                                  "maxPrice":  "8.9000",
+                                                  "tickSize":  "0.0100"
+                                              },
+                                              {
+                                                  "filterType":  "LOT_SIZE",
+                                                  "minQty":  "0.01",
+                                                  "maxQty":  "3000",
+                                                  "stepSize":  "0.01"
+                                              }
+                                          ],
+                              "symbol":  "SOL-261030-122-C",
+                              "side":  "CALL",
+                              "strikePrice":  "122.0000",
+                              "underlying":  "SOLUSDT",
+                              "unit":  1,
+                              "liquidationFeeRate":  "0.001900",
+                              "minQty":  "0.01",
+                              "maxQty":  "3000",
+                              "initialMargin":  "0.15000000",
+                              "maintenanceMargin":  "0.07500000",
+                              "minInitialMargin":  "0.10000000",
+                              "minMaintenanceMargin":  "0.05000000",
+                              "priceScale":  4,
+                              "quantityScale":  2,
+                              "quoteAsset":  "USDT",
+                              "status":  "TRADING",
+                              "contractType":  "CRYPTO_OPTIONS",
+                              "underlyingType":  "CRYPTO"
+                          }
+                      ],
+    "rateLimits":  [
+                       {
+                           "rateLimitType":  "REQUEST_WEIGHT",
+                           "interval":  "MINUTE",
+                           "intervalNum":  1,
+                           "limit":  400
+                       },
+                       {
+                           "rateLimitType":  "ORDERS",
+                           "interval":  "MINUTE",
+                           "intervalNum":  1,
+                           "limit":  100
+                       },
+                       {
+                           "rateLimitType":  "ORDERS",
+                           "interval":  "SECOND",
+                           "intervalNum":  10,
+                           "limit":  30
+                       }
+                   ]
+}

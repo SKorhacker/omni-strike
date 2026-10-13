@@ -1,0 +1,76 @@
+# Omni Strike MAINNET NON-CUSTODIAL entry point (docker-compose.mainnet-nc.yml, profile "proxy").
+# Same as Caddyfile, plus the web UI's /api/* calls proxied to oa-server WITH the API token, so
+# end users can quote, prepare, sign in their wallet and submit from the page. Only the endpoints
+# the page uses are proxied with the token (allowlist below); the server also rate-limits
+# anonymous callers per client IP (OA_PUBLIC_RPS, client IP from X-Forwarded-For set by Caddy).
+# Automatic HTTPS: Caddy obtains/renews a Let's Encrypt certificate for {$OA_DOMAIN} as long as
+# the DNS A/AAAA record points here and ports 80/443 are reachable from the internet.
+#
+# Routing:
+#   /v1/admin/*                      -> blocked publicly (use an SSH tunnel to 127.0.0.1:8080)
+#   /v1/*, /health/*, /openapi.json  -> oa-server (integrators, bearer token enforced by the API)
+#   everything else                  -> web (Next.js demo UI)
+#
+# Rate limiting: stock Caddy has no rate limiter. The API enforces per-integrator limits
+# (integrators.rate_limit_rps) and a global in-flight cap (OA_MAX_INFLIGHT). For edge limiting,
+# build Caddy with github.com/mholt/caddy-ratelimit (xcaddy) or put a CDN/WAF in front.
+
+{
+	email {$ACME_EMAIL}
+	# Uncomment while testing to avoid Let's Encrypt production rate limits:
+	# acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
+
+{$OA_DOMAIN} {
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=63072000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+		Cross-Origin-Opener-Policy "same-origin"
+		# Next.js inlines bootstrap scripts; tighten with nonces before going stricter than this.
+		Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+		-Server
+		-X-Powered-By
+	}
+
+	# handle blocks with named matchers are mutually exclusive and evaluated in the order written:
+	# the admin block MUST stay first.
+	@admin path /v1/admin /v1/admin/* /api/v1/admin /api/v1/admin/*
+	handle @admin {
+		respond "Not Found" 404
+	}
+
+	@api path /v1/* /health/* /openapi.json
+	handle @api {
+		reverse_proxy oa-server:8080 {
+			health_uri /health/live
+			health_interval 15s
+		}
+	}
+
+	# Web UI calls: Caddy adds the API token, ONLY for the endpoints the page uses (allowlist).
+	# Everything else under /api/* is refused, so the injected token never opens the whole API.
+	@ui path /api/health/* /api/v1/platforms /api/v1/instruments /api/v1/quotes/compare /api/v1/routes/preview /api/v1/routes/quote /api/v1/orders/simulate /api/v1/exec-stats /api/v1/live/savings /api/v1/noncustodial/*
+	handle @ui {
+		uri strip_prefix /api
+		reverse_proxy oa-server:8080 {
+			header_up Authorization "Bearer {$OA_UI_PROXY_TOKEN}"
+		}
+	}
+	handle /api/* {
+		respond "Not Found" 404
+	}
+
+	handle {
+		reverse_proxy web:3000
+	}
+
+	log {
+		output stdout
+		format json
+	}
+}

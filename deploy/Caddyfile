@@ -1,0 +1,70 @@
+# Omni Strike public entry point (compose profile "proxy").
+# Automatic HTTPS: Caddy obtains/renews a Let's Encrypt certificate for {$OA_DOMAIN} as long as
+# the DNS A/AAAA record points here and ports 80/443 are reachable from the internet.
+#
+# Routing:
+#   /v1/admin/*                      -> blocked publicly (use an SSH tunnel to 127.0.0.1:8080)
+#   /v1/*, /health/*, /openapi.json  -> oa-server (integrators, bearer token enforced by the API)
+#   everything else                  -> web (Next.js demo UI)
+#
+# Rate limiting: stock Caddy has no rate limiter. The API enforces per-integrator limits
+# (integrators.rate_limit_rps) and a global in-flight cap (OA_MAX_INFLIGHT). For edge limiting,
+# build Caddy with github.com/mholt/caddy-ratelimit (xcaddy) or put a CDN/WAF in front.
+
+{
+	email {$ACME_EMAIL}
+	# Uncomment while testing to avoid Let's Encrypt production rate limits:
+	# acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
+
+{$OA_DOMAIN} {
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=63072000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+		Cross-Origin-Opener-Policy "same-origin"
+		# Next.js inlines bootstrap scripts; tighten with nonces before going stricter than this.
+		Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+		-Server
+		-X-Powered-By
+	}
+
+	# handle blocks with named matchers are mutually exclusive and evaluated in the order written:
+	# the admin block MUST stay first.
+	@admin path /v1/admin /v1/admin/* /api/v1/admin /api/v1/admin/*
+	handle @admin {
+		respond "Not Found" 404
+	}
+
+	@api path /v1/* /health/* /openapi.json
+	handle @api {
+		reverse_proxy oa-server:8080 {
+			health_uri /health/live
+			health_interval 15s
+		}
+	}
+
+	# PUBLIC DEMO MODE (opt-in, read the security note in docs/deployment.md first).
+	# The demo UI calls /api/v1/* WITHOUT a token, but a container bind (0.0.0.0) forces
+	# OA_API_TOKEN, so those calls get 401. This block lets the UI work by having Caddy inject the
+	# token — which makes the read-only API usable by ANYONE through the UI path. Only for a
+	# read-only demo; keep /v1/admin blocked above. Add OA_UI_PROXY_TOKEN to the caddy service env.
+	# handle_path /api/* {
+	# 	reverse_proxy oa-server:8080 {
+	# 		header_up Authorization "Bearer {$OA_UI_PROXY_TOKEN}"
+	# 	}
+	# }
+
+	handle {
+		reverse_proxy web:3000
+	}
+
+	log {
+		output stdout
+		format json
+	}
+}

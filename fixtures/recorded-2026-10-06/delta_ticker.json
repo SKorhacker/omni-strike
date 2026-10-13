@@ -1,0 +1,54 @@
+{
+ "success": true,
+ "result": {
+  "timestamp": 1791281027475633,
+  "description": "BTC  Call",
+  "tags": [],
+  "symbol": "C-BTC-86000-081026",
+  "sort_priority": 30,
+  "product_id": 395602,
+  "tick_size": "0.100000000000000000",
+  "contract_type": "call_options",
+  "contract_value": "0.001000000000000000",
+  "price_band": {
+   "lower_limit": "0.10000000",
+   "upper_limit": "1957.68522003"
+  },
+  "strike_price": "86000",
+  "mark_price": "741.03571662",
+  "underlying_asset_symbol": "BTC",
+  "greeks": {
+   "delta": "0.51037623",
+   "spot": "86028.1",
+   "gamma": "0.00021877",
+   "rho": "2.46071525",
+   "theta": "-174.69638653",
+   "vega": "25.90395162"
+  },
+  "spot_price": "86028.1",
+  "quotes": {
+   "ask_iv": "0.28904723",
+   "ask_size": "1153",
+   "best_ask": "763",
+   "best_bid": "717",
+   "bid_iv": "0.27128943",
+   "bid_size": "1730",
+   "impact_mid_price": null,
+   "mark_iv": "0.28060835"
+  },
+  "oi_value_symbol": "BTC",
+  "turnover_symbol": "USDT",
+  "mark_low_24h": "406.93289678",
+  "oi_value": "0.0000",
+  "oi_contracts": "0",
+  "product_trading_status": "operational",
+  "leverage": 100,
+  "oi_value_usd": "0.0000",
+  "oi_change_usd_6h": "0.0000",
+  "mark_change_24h": "74.3078",
+  "oi": "0.0000",
+  "oi_reduce_only_mode": false,
+  "mark_high_24h": "1391.40728036",
+  "mark_vol": "0.28060835"
+ }
+}

@@ -1,0 +1,18 @@
+# cargo-deny (CI job "deps"): `cargo deny check advisories bans`.
+
+[advisories]
+# Fail on any RustSec vulnerability or unsound crate; yanked crates are reported.
+yanked = "warn"
+ignore = [
+  # rsa (Marvin attack): only in Cargo.lock through sqlx's optional MySQL driver, never compiled
+  # (`cargo tree -i rsa --target all` is empty). Remove when sqlx drops it from the lockfile.
+  "RUSTSEC-2023-0071",
+]
+
+[bans]
+# Several crates exist in two versions because of upstream pins (rand 0.8/0.9/0.10 via sqlx,
+# rust_decimal and tungstenite; digest 0.10/0.11): tracked, not fatal.
+multiple-versions = "warn"
+wildcards = "deny"
+# Workspace crates depend on each other by path (never published).
+allow-wildcard-paths = true

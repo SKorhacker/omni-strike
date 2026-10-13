@@ -1,0 +1,42 @@
+{
+ "signer_address": "0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826",
+ "test_key_note": "keccak('cow') public test key",
+ "cases": [
+  {
+   "domain": "testnet",
+   "maker": "0x0000000000000000000000000000000000000001",
+   "isBuy": true,
+   "limitPrice": "101700000",
+   "amount": "1000000",
+   "salt": "123456",
+   "instrument": "127909",
+   "timestamp": "1791200000",
+   "digest": "0x9e37fd3ae2a5c24a38818f641e1e071d655a6aa3e7a90df959b3ba81f8921f77",
+   "signature": "0xa5e41878f66483655a23de4229e119de5a8ace790a6185b5991bd312229392874d6d4c4365de7aeabbfb9ec0fde25efb3fcb82f1e43e495f9d09ce7bdf1dafd31c"
+  },
+  {
+   "domain": "testnet",
+   "maker": "0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826",
+   "isBuy": false,
+   "limitPrice": "1",
+   "amount": "10000",
+   "salt": "999999999999",
+   "instrument": "1",
+   "timestamp": "1690434000",
+   "digest": "0x10c408b4ba9d17ece418bf5472fab3739cd009c213ed3f0c7684b0ec043ed4ee",
+   "signature": "0xcab46e88f22d764d026ab9ae7bd3477bea2a4d169090667089c379623abdeea55e082970288667bbe9237bb313f135748040fcf8f38b8ab7ebf48ae225adefe71b"
+  },
+  {
+   "domain": "mainnet",
+   "maker": "0x00000000000000000000000000000000DeaDBeef",
+   "isBuy": true,
+   "limitPrice": "18446744073709551621",
+   "amount": "2000000",
+   "salt": "0",
+   "instrument": "142360",
+   "timestamp": "1791273600",
+   "digest": "0xd1d3deb1702932e5031482c4b523cb1350e81c56be90a3996b917399e2961280",
+   "signature": "0x5ccbc135789578a74055cc9b9f5f559eeeb63914dfd4febb754f701baa6548f005f7ce0b909231810c71f89c79248958c818f6a83c8ddaae5a220ea9795a1e911b"
+  }
+ ]
+}

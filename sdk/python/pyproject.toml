@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omni-strike"
+version = "0.1.0"
+description = "Official Python SDK for the Omni Strike crypto options best-execution API"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Typing :: Typed",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Source = "https://github.com/SKorhacker/omni-strike"
+
+[tool.setuptools]
+packages = ["omni_strike"]
+
+[tool.setuptools.package-data]
+omni_strike = ["py.typed"]

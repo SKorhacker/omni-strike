@@ -1,0 +1,12 @@
+name: Venue request
+description: Ask for a new venue or a fix to an existing connector
+labels: [venue]
+body:
+  - type: input
+    id: venue
+    attributes: { label: Venue }
+    validations: { required: true }
+  - type: textarea
+    id: sources
+    attributes: { label: Official API / contract documentation, description: "Links to the public market-data API, fee schedule and settlement terms." }
+    validations: { required: true }

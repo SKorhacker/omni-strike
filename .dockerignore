@@ -1,0 +1,33 @@
+# Keep the build context small and, above all, free of secrets.
+# Secrets: every env file except the committed examples.
+.env
+.env.*
+!.env.example
+!.env.testnet.example
+deploy/.env
+deploy/.env.*
+!deploy/.env.example
+**/*.pem
+**/*.key
+
+# Build outputs and caches
+target/
+**/target/
+web/node_modules/
+web/.next/
+web/tsconfig.tsbuildinfo
+sdk/**/node_modules/
+**/__pycache__/
+**/*.pyc
+
+# Repo noise not needed by any image
+.git/
+.github/
+logs/
+*.log
+fixtures/
+docs/
+!docs/integrators.md
+scripts/
+sdk/
+deploy/data/

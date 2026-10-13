@@ -1,0 +1,38 @@
+{
+ "retCode": 0,
+ "retMsg": "SUCCESS",
+ "result": {
+  "category": "option",
+  "list": [
+   {
+    "symbol": "BTC-25DEC26-85000-C-USDT",
+    "bid1Price": "7100",
+    "bid1Size": "7.06",
+    "bid1Iv": "0.3649",
+    "ask1Price": "7160",
+    "ask1Size": "7.06",
+    "ask1Iv": "0.3687",
+    "lastPrice": "6975",
+    "highPrice24h": "6975",
+    "lowPrice24h": "6770",
+    "markPrice": "7141.18356177",
+    "indexPrice": "86317.80901619",
+    "markIv": "0.3676",
+    "underlyingPrice": "87332.67",
+    "openInterest": "186.37",
+    "turnover24h": "23417.659",
+    "volume24h": "0.27",
+    "totalVolume": "443",
+    "totalTurnover": "33097132",
+    "delta": "0.596169",
+    "gamma": "0.0000258",
+    "vega": "158.19248855",
+    "theta": "-36.41192206",
+    "predictedDeliveryPrice": "0",
+    "change24h": "-0.01203967"
+   }
+  ]
+ },
+ "retExtInfo": {},
+ "time": 1791287285694
+}

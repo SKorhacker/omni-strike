@@ -1,0 +1,44 @@
+# Omni Strike — MAINNET NON-CUSTODIAL stack (override of docker-compose.yml). REAL FUNDS are the
+# END USERS' own: they sign every order / send every transaction from their wallet in the web UI.
+# The server holds NO key and cannot move funds.
+#
+#   cd deploy && cp .env.mainnet-nc.example .env.mainnet-nc && chmod 600 .env.mainnet-nc   # fill it
+#   NC="docker compose -p omni-strike-nc -f docker-compose.yml -f docker-compose.mainnet-nc.yml --env-file .env.mainnet-nc"
+#   $NC build
+#   $NC up -d                     # db + oa-server (mainnet-nc build) + web
+#   $NC --profile proxy up -d     # + Caddy (HTTPS on OA_DOMAIN, UI calls proxied with the token)
+#
+# Own compose project (-p): own volumes and database, never shared with the read-only stack.
+# `!override` needs Docker Compose >= 2.24.4.
+
+services:
+  db:
+    environment:
+      # MAINNET_NONCUSTODIAL refuses to start unless the database name contains "mainnet_nc".
+      POSTGRES_DB: options_aggregator_mainnet_nc
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U oa -d options_aggregator_mainnet_nc -h 127.0.0.1"]
+
+  oa-server:
+    image: omni-strike/oa-server:mainnet-nc-${OA_IMAGE_TAG:-latest}
+    build:
+      args:
+        CARGO_FEATURES: "mainnet-nc"
+    env_file: !override
+      - .env.mainnet-nc
+    environment:
+      DATABASE_URL: postgres://oa:${OA_PG_PASSWORD:?set OA_PG_PASSWORD}@db:5432/options_aggregator_mainnet_nc
+      OA_TRADING_MODE: MAINNET_NONCUSTODIAL
+
+  caddy:
+    environment:
+      # The web UI calls /api/v1/* without a token; Caddy adds it (see Caddyfile.mainnet-nc).
+      OA_UI_PROXY_TOKEN: ${OA_API_TOKEN:?OA_API_TOKEN is required}
+    volumes: !override
+      - ./Caddyfile.mainnet-nc:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
+  postgres-exporter:
+    environment:
+      DATA_SOURCE_NAME: postgresql://oa:${OA_PG_PASSWORD:?set OA_PG_PASSWORD}@db:5432/options_aggregator_mainnet_nc?sslmode=disable

@@ -1,0 +1,246 @@
+{
+ "outcomes": [
+  {
+   "outcome": 1473,
+   "name": "template:sportsTournamentParticipant",
+   "description": "participant:Arsenal",
+   "sideSpecs": [
+    {
+     "name": "Yes"
+    },
+    {
+     "name": "No"
+    }
+   ],
+   "quoteToken": "USDC",
+   "venue": "out",
+   "deployerFeeScale": "1.0"
+  },
+  {
+   "outcome": 7113,
+   "name": "template:binaryPrice",
+   "description": "perp:xyz:XYZ100|priceDescription:the Pyth US100 index price|seconds:90|threshold:29855|time:20261007-2000",
+   "sideSpecs": [
+    {
+     "name": "template:Yes"
+    },
+    {
+     "name": "template:No"
+    }
+   ],
+   "quoteToken": "USDC",
+   "venue": "skew",
+   "deployerFeeScale": "1.0"
+  },
+  {
+   "outcome": 7173,
+   "name": "template:priceTouch",
+   "description": "perp:BTC|priceDescription:BTC-USDC perp mark|seconds:3|target:87500|time:20261101-0000",
+   "sideSpecs": [
+    {
+     "name": "template:Yes"
+    },
+    {
+     "name": "template:No"
+    }
+   ],
+   "quoteToken": "USDC",
+   "venue": "out",
+   "deployerFeeScale": "1.0"
+  },
+  {
+   "outcome": 7349,
+   "name": "template:binaryPrice",
+   "description": "perp:HYPE|priceDescription:1-minute candle|seconds:300|threshold:98|time:20261030-2000",
+   "sideSpecs": [
+    {
+     "name": "template:Yes"
+    },
+    {
+     "name": "template:No"
+    }
+   ],
+   "quoteToken": "USDC",
+   "venue": "txyz"
+  },
+  {
+   "outcome": 7581,
+   "name": "template:binaryPrice",
+   "description": "perp:BTC|priceDescription:the Pyth BTC/USD price|seconds:90|threshold:85090|time:20261009-0800",
+   "sideSpecs": [
+    {
+     "name": "template:Yes"
+    },
+    {
+     "name": "template:No"
+    }
+   ],
+   "quoteToken": "USDC",
+   "venue": "skew",
+   "deployerFeeScale": "1.0"
+  },
+  {
+   "outcome": 7587,
+   "name": "template:binaryPrice",
+   "description": "perp:ETH|priceDescription:the Pyth ETH/USD price|seconds:90|threshold:2698|time:20261009-0800",
+   "sideSpecs": [
+    {
+     "name": "template:Yes"
+    },
+    {
+     "name": "template:No"
+    }
+   ],
+   "quoteToken": "USDC",
+   "venue": "skew",
+   "deployerFeeScale": "1.0"
+  },
+  {
+   "outcome": 9015,
+   "name": "Recurring",
+   "description": "class:priceBinary|underlying:BTC|expiry:20261007-0600|targetPrice:85501|period:1d",
+   "sideSpecs": [
+    {
+     "name": "Yes"
+    },
+    {
+     "name": "No"
+    }
+   ],
+   "quoteToken": "USDC"
+  },
+  {
+   "outcome": 9016,
+   "name": "Recurring",
+   "description": "class:priceBinary|underlying:ETH|expiry:20261007-0600|targetPrice:2699|period:1d",
+   "sideSpecs": [
+    {
+     "name": "Yes"
+    },
+    {
+     "name": "No"
+    }
+   ],
+   "quoteToken": "USDC"
+  },
+  {
+   "outcome": 9017,
+   "name": "Recurring",
+   "description": "class:priceBinary|underlying:SOL|expiry:20261007-0600|targetPrice:119.76|period:1d",
+   "sideSpecs": [
+    {
+     "name": "Yes"
+    },
+    {
+     "name": "No"
+    }
+   ],
+   "quoteToken": "USDC"
+  },
+  {
+   "outcome": 9018,
+   "name": "Recurring",
+   "description": "class:priceBinary|underlying:HYPE|expiry:20261007-0600|targetPrice:92.976|period:1d",
+   "sideSpecs": [
+    {
+     "name": "Yes"
+    },
+    {
+     "name": "No"
+    }
+   ],
+   "quoteToken": "USDC"
+  },
+  {
+   "outcome": 9020,
+   "name": "Recurring Fallback",
+   "description": "other",
+   "sideSpecs": [
+    {
+     "name": "Yes"
+    },
+    {
+     "name": "No"
+    }
+   ],
+   "quoteToken": "USDC"
+  },
+  {
+   "outcome": 9021,
+   "name": "Recurring Named Outcome",
+   "description": "index:0",
+   "sideSpecs": [
+    {
+     "name": "Yes"
+    },
+    {
+     "name": "No"
+    }
+   ],
+   "quoteToken": "USDC"
+  },
+  {
+   "outcome": 9084,
+   "name": "template:binaryPrice",
+   "description": "perp:BTC|priceDescription:the Hyperliquid BTC perp trade|seconds:90|threshold:84982|time:20261007-0800",
+   "sideSpecs": [
+    {
+     "name": "template:Yes"
+    },
+    {
+     "name": "template:No"
+    }
+   ],
+   "quoteToken": "USDC",
+   "venue": "skew",
+   "deployerFeeScale": "1.0"
+  },
+  {
+   "outcome": 9148,
+   "name": "template:binaryPrice",
+   "description": "perp:BTC|priceDescription:BTC-USDC perp mark|seconds:60|threshold:86353|time:20261006-1230",
+   "sideSpecs": [
+    {
+     "name": "template:Yes"
+    },
+    {
+     "name": "template:No"
+    }
+   ],
+   "quoteToken": "USDC",
+   "venue": "out",
+   "deployerFeeScale": "1.0"
+  },
+  {
+   "outcome": 9150,
+   "name": "template:binaryPrice",
+   "description": "perp:ETH|priceDescription:ETH-USDC perp mark|seconds:60|threshold:2714.9|time:20261006-1230",
+   "sideSpecs": [
+    {
+     "name": "template:Yes"
+    },
+    {
+     "name": "template:No"
+    }
+   ],
+   "quoteToken": "USDC",
+   "venue": "out",
+   "deployerFeeScale": "1.0"
+  }
+ ],
+ "questions": [
+  {
+   "question": 392,
+   "name": "Recurring",
+   "description": "class:priceBucket|underlying:BTC|expiry:20261007-0600|priceThresholds:83791,87211|period:1d",
+   "fallbackOutcome": 9020,
+   "namedOutcomes": [
+    9021,
+    9022,
+    9023
+   ],
+   "settledNamedOutcomes": []
+  }
+ ],
+ "feeScale": "1.0"
+}

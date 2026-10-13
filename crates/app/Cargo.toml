@@ -44,7 +44,7 @@ dotenvy = "0.15"
 futures-util = "0.3"
 hex.workspace = true
 sha2.workspace = true
-hmac = "0.12"
+hmac = "0.13"
 # Global allocator of the binaries (measured with oa-bench).
 mimalloc = { version = "0.1", default-features = false }
 kameo = "=0.22.2"
